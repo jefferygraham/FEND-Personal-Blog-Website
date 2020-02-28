@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Design System</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <header>
             <h1>Design System</h1>
         </header>
-        <section>
+        <section id="foundations">
             <h2>Foundations</h2>
             <ul>
                 <li><h3>Typography</h3></li>
-                <ol>
-                    <li>h1</li>
-                    <li>h2</li>
-                    <li>h3</li>
-                    <li>p
-                        <ol>
-                            <li>Bold</li>
-                            <li>Italic</li>
-                            <li>Underline</li>
-                        </ol>
+                <ul>
+                    <li><h1>Heading 1</h1></li>
+                    <li><h2>Heading 2: h2</h2></li>
+                    <li><h3>Heading 3: h3</h3></li>
+                    <li><p>Paragraph</p>
+                        <ul>
+                            <li><strong>Bold</strong></li> <!-- Research HTML -->
+                            <li><em>Italic</em></li>  <!-- Research HTML -->
+                            <li><u>Underline</u></li>  <!-- Research HTML -->
+                        </ul>
                     </li>
-                    <li>Links</li>
-                    <li>Quotes</li>
-                </ol>
+                    <li><a href="#">Links</a></li>
+                    <li><q>Quotes</q></li>
+                </ul>
                 <li><h3>Colors</h3>
                     <ul>
-                        <li>COLOR#1</li>
-                        <li>COLOR#2</li>
-                        <li>COLOR#3</li>
+                        <li><div class="colors dark-grayish-blue-bg text-white">#1b262c</div></li>
+                        <li><div class="colors dark-blue-bg text-white">#0f4c75</div></li>
+                        <li><div class="colors bright-blue-bg">#3282b8</div></li>
+                        <li><div class="colors pale-blue-bg">#bbe1fa</div></li>
                     </ul>
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="components">
             <h2>Components</h2>
             <ul>
                 <li>Image(s)</li>
@@ -46,7 +48,7 @@
                 <li>Cards</li>
             </ul>
         </section>
-        <section>
+        <section id="patterns">
             <h2>Patterns</h2>
             <ul>
                 <li><h3>Blog Homepage</h3></li>
@@ -73,12 +75,12 @@
                 </li>
             </ul>
         </section>
-        <section>
+        <section id="pages">
             <h2>Pages</h2>
-            <ol>
+            <ul>
                 <li>Blog Homepage</li>
                 <li>Blog Post</li>
-            </ol>
+            </ul>
         </section>
         <footer>
             <p>Copyright</p>
