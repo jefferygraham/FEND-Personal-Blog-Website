@@ -4,6 +4,13 @@
 body {
     font-size: calc(12px + 1vw); /* Responsive base font size */
     font-family: 'Crimson Text';
+    color: #1b262c
+}
+
+.heading-font-size {
+    font-size: calc(12px + 1vw); /* Responsive base font size */
+    font-family: 'Crimson Text';
+    font-weight: normal;
 }
 
 .container {
@@ -13,22 +20,6 @@ body {
 }
 
 /* COLORS */
-.dark-grayish-blue {
-    color: #1b262c;
-}
-
-.dark-blue {
-    color: #0f4c75;
-}
-
-.bright-blue {
-    color: #3282b8;
-}
-
-.pale-blue {
-    color: #bbe1fa;
-}
-
 .dark-grayish-blue-bg {
     background-color: #1b262c;
 }
@@ -49,7 +40,7 @@ body {
     color: white;
 }
 
-.colors {
+#colors {
     width: 75px;
     height: 75px;
     border-radius: 50%;
@@ -59,4 +50,54 @@ body {
     align-items: center;
 }
 
+.circle {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+blockquote {
+    background: #f9f9f9;
+    border-left: 10px solid #1b262c;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+  }
+  blockquote:before {
+    color: #0f4c75;
+    content: open-quote;
+    font-size: 4em;
+    line-height: 0.1em;
+    margin-right: 0.25em;
+    vertical-align: -0.4em;
+  }
+
+  blockquote p {
+    display: inline;
+  }
+
+  button {
+      border-radius: 5px;
+      border: 1px solid #1b262c;
+      padding: 2.5% 5%;
+      width: 50%;
+  }
+
+  button:hover {
+      background-color: #ccc;
+  }
+
+  .btn-primary { 
+    background-color: #0f4c75;
+  }
+
+  button.btn-primary:hover { 
+    background-color: #3282b8;
+  }
+
+
+ 
+  
