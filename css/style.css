@@ -1,7 +1,7 @@
 @import 'normalize.css';
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text&display=swap');
 
-body {
+body,html {
     font-size: calc(12px + 1vw); /* Responsive base font size */
     font-family: 'Crimson Text';
     color: #1b262c;
@@ -16,8 +16,13 @@ body {
 
 .container {
     width: 100%; /* For small screens */
-    max-width: 1140px; /* For large screens */
     margin: auto; /* Center the container in the viewport */
+    display: grid;
+    grid-template-columns: auto;
+}
+
+main { 
+    justify-self: center;
 }
 
 /* COLORS */
@@ -85,11 +90,14 @@ blockquote p {
     display: inline;
 }
 
-button {
+button,
+.button  {
     border-radius: 5px;
     border: 1px solid #1b262c;
     padding: 2% 2%;
     width: 50%;
+    display: inline-block;
+    text-align: center;
 }
 
 button:hover {
@@ -108,6 +116,34 @@ li {
     margin: 1% 0;
 }
 
+nav ul {
+    list-style: none;
+}
 
- 
-  
+nav a {
+    text-decoration: none;
+    color: #0f4c75;
+}
+
+nav a:hover {
+    text-decoration: underline
+}
+
+
+.card {
+    border-radius: 2px;
+    background-color: #eee;
+    padding: 0 0.1em;
+    width: 95vw;
+}
+
+header,
+footer {
+    background: yellow;
+    padding: 0.1em 0.5em;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
