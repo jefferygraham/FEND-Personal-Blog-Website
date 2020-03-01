@@ -4,7 +4,8 @@
 body {
     font-size: calc(12px + 1vw); /* Responsive base font size */
     font-family: 'Crimson Text';
-    color: #1b262c
+    color: #1b262c;
+    line-height: calc((12px + 1vw) * 1.4);
 }
 
 .heading-font-size {
@@ -34,6 +35,10 @@ body {
 
 .pale-blue-bg {
     background-color: #bbe1fa;
+}
+
+.grayish-bg {
+    background-color: #777;
 }
 
 .text-white {
@@ -66,37 +71,42 @@ blockquote {
     padding: 0.5em 10px;
     quotes: "\201C""\201D""\2018""\2019";
   }
-  blockquote:before {
+
+blockquote:before {
     color: #0f4c75;
     content: open-quote;
     font-size: 4em;
     line-height: 0.1em;
     margin-right: 0.25em;
     vertical-align: -0.4em;
-  }
+}
 
-  blockquote p {
+blockquote p {
     display: inline;
-  }
+}
 
-  button {
-      border-radius: 5px;
-      border: 1px solid #1b262c;
-      padding: 2.5% 5%;
-      width: 50%;
-  }
+button {
+    border-radius: 5px;
+    border: 1px solid #1b262c;
+    padding: 2% 2%;
+    width: 50%;
+}
 
-  button:hover {
-      background-color: #ccc;
-  }
+button:hover {
+    background-color: #ccc;
+}
 
-  .btn-primary { 
+.btn-primary { 
     background-color: #0f4c75;
-  }
+}
 
-  button.btn-primary:hover { 
+button.btn-primary:hover { 
     background-color: #3282b8;
-  }
+}
+
+li {
+    margin: 1% 0;
+}
 
 
  
