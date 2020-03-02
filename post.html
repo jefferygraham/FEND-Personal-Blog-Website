@@ -8,19 +8,21 @@
 </head>
 <body>
     <div class="container">
-        <header>
+        <header class="post-header">
             <h1>Blog Post 1</h1>
+            <nav>
+                <a class="text-white" href="index.html">Home</a>
+            </nav>
         </header>
-        <section>
-            <div id="author-image">
-            </div>
-            <div id="author-info">
-                <span>Author name</span>
-                <br>
-                <span>Article Date</span>
-            </div>
-        </section>
-        <main>
+        <main class="article">
+            <section class="author-info">
+                <div class="circle grayish-bg"></div>
+                <div class="byline">
+                    <span>Jeffery Graham</span>
+                    <br>
+                    <span>Article Date</span>
+                </div>
+            </section>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis nulla lectus. Donec nisl lorem, sodales id ornare vel, tempus vel felis. Fusce at vehicula enim. Vestibulum eleifend orci a pretium malesuada. Pellentesque purus nulla, dignissim ut posuere sed, suscipit a orci. Nulla metus enim, euismod at tempus quis, varius et urna. Integer semper eget arcu id egestas.
             </p>
@@ -41,7 +43,10 @@
             </p>
         </main>
         <footer>
-            <p>Copyright</p>
+            <p>&copy; Copyright 2020</p>
+            <nav>
+                <a class="text-white" href="design-system.html">Design System</a>
+            </nav>
         </footer>
     </div>
 </body>
