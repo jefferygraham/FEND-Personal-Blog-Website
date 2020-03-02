@@ -144,6 +144,7 @@ nav a:hover {
     width: 95vw;
 }
 
+
 .byline {
     padding-left: 0.3em;
 }
@@ -158,6 +159,6 @@ nav a:hover {
 .header-image {
     height: 45vh;
     background-image: url('https://via.placeholder.com/1980x500');
-    background-size: cover; /* <-- background size */
-    background-position: center; /* <-- background position */
+    background-size: cover; 
+    background-position: center;
 }
