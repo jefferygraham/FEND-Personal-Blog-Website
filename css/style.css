@@ -27,6 +27,14 @@ main {
     justify-self: center;
 }
 
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article a {
+    align-self: center;
+}
 /* COLORS */
 .dark-grayish-blue-bg {
     background-color: #1b262c;
@@ -53,8 +61,8 @@ main {
 }
 
 #colors {
-    width: 75px;
-    height: 75px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -63,12 +71,38 @@ main {
 }
 
 .circle {
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
     width: 75px;
     height: 75px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url('../image/j.png');
+    background-size: contain;
+}
+
+.branding {
+    display: flex;
+    align-items: center;
+}
+
+.branding h1 {
+    padding-left: 0.4em;
+}
+
+#author-img {
+    background-image: url('../image/jlg.jpg');
+    background-position: center;
+    background-size: contain;
 }
 
 blockquote {
@@ -134,33 +168,54 @@ nav a:hover {
 
 .card {
     border-radius: 2px;
-    background-color: #eee;
     padding: 0 0.1em;
     width: 95vw;
 }
 
 .article {
-    padding: 0.3em 0.1em;
+    padding: 0.4em 0.4em;
     width: 95vw;
 }
 
 
 .byline {
-    padding-left: 0.3em;
+    padding-left: 0.4em;
 }
 
 #patterns,
 #pages,
 #components,
 #foundations {
-    padding: 0.3em;
+    padding: 0.4em;
 }
 
-.header-image {
-    height: 45vh;
-    background-image: url('https://via.placeholder.com/1980x500');
-    background-size: cover; 
+.hero-image {
+    background-image: url("../image/web-dev-setup.jpg");
+    height: 55vh;
     background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.post-img {
+    height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+#post-img1 {
+    background-image: url("../image/web-dev-setup.jpg");
+}
+
+#post-img2 {
+    background-image: url("https://via.placeholder.com/1280x850");
+}
+
+#post-img3 {
+    background-image: url("https://via.placeholder.com/1280x850");
 }
 
 @media (min-width: 900px) {
@@ -205,5 +260,14 @@ nav a:hover {
 
     .post-header {
         grid-area: header;
+    }
+
+    .article {
+        justify-self: center;
+    }
+
+    #author-img {
+        width: 100px;
+        height: 100px;
     }
 }
