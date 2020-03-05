@@ -11,16 +11,24 @@
         <div></div>
         <h1>Is That Jeff?</h1>
     </header>
-    <div>
-        <nav>
-            <ul>
-                <li><a href="post.html">My Name is Jeff?</a></li>
-                <li><a href="#">Post 2</a></li>
-                <li><a href="#">About Me</a></li>
-                <li><button>Subscribe</button></li>
-                <li><button>Follow</li>
-            </ul>
-        </nav>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-menu is-active">
+            <a class="navbar-item" href="post.html">
+                My Name is Jeff@
+            </a>
+            <a class="navbar-item" href="post.html">
+                Post 2@
+            </a>
+            <a class="navbar-item" href="post.html">
+                About Me@
+            </a>
+        </div>
+        <ul>
+            <li><button>Subscribe</button></li>
+            <li><button>Follow</li>
+        </ul>
+    </nav>
+    <div class="container is-fluid">
         <main>
             <h2>Recent Articles</h2>
             <section id="posts">
@@ -40,7 +48,7 @@
             </section>
         </main>
     </div>
-    <footer>
+    <footer class="footer">
         <p>&copy; Copyright 2020</p>
         <nav>
             <a href="design-system.html">Design System</a>
