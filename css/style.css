@@ -1,18 +1,32 @@
 @import 'https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css';
 
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
-    
-  #wrapper {
-    flex: 1;
-  }
-
-.footer {
-    background-color: red;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  color: #2f2f2f;
+  background-color: #fdfdfd;
 }
 
+#wrapper {
+  flex: 1;
+}
+  
+/* Color Scheme */
+.main-color {
+    background-color: #2f2f2f;
+}
+
+.accent-color-1 {
+  background-color: #473232;
+}
+
+.accent-color-2 {
+  background-color: #7A7A7A;scroll-snap-type;
+}
+
+.text-light {
+  color: #fdfdfd;
+}
 
 
