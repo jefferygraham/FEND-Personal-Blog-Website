@@ -7,16 +7,52 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <div></div>
-            <h1>Design System</h1>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="#">
+            <!-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> -->
+            </a>
+
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            </a>
         </div>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
-    </header>
-    <div>
+
+        <div id="navbarMain" class="navbar-menu">
+            <div class="navbar-start">
+                <a class="navbar-item" href="index.html">
+                    Home
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">
+                    Posts
+                    </a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="post.html">
+                            My Name is Jeff
+                        </a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="design-system.html">
+                    Design System
+                </a>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="hero is-dark">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Design System
+                </h1>
+            </div>
+        </div>
+    </section>
+
+    <div class="container is-fluid">
         <section id="foundations">
             <h2>Foundations</h2>
             <ul>
@@ -90,6 +126,7 @@
             </ul>
         </section>
     </div>
+
     <footer class="footer">
         <p>&copy; Copyright 2020</p>
     </footer>
